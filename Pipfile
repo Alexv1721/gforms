@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+django-extensions = "*"
+psycopg = {extras = ["binary"], version = "*"}
+
+[dev-packages]
+ruff = "*"
+debugpy = "*"
+ptpython = "*"
+ipython = "*"
+
+[requires]
+python_version = "3.12"
