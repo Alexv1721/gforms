@@ -59,19 +59,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'googleForms.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         "ENGINE": os.environ.get("DEFAULT_DB_ENGINE", default="django.db.backends.postgresql"),
-#         "HOST": os.environ.get("DEFAULT_DB_HOST", default="localhost"),
-#         "USER": os.environ.get("DEFAULT_DB_USER", default="postgres"),
-#         "PASSWORD": os.environ.get("DEFAULT_DB_PASSWORD", default="postgres-password"),
-#         "NAME": os.environ.get("DEFAULT_DB_NAME", default="gforms"), # Match this to your POSTGRES_DB in docker-compose
-#         "PORT": os.environ.get("DEFAULT_DB_PORT", default="5432"),
-#     }
-# }
 
 DATABASES = {
     "default": {
