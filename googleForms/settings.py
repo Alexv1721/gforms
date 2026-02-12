@@ -11,7 +11,7 @@ SECRET_KEY = 'django-insecure-z(s$-2_wox)t=9_*8w-je+z2#6t0payi!$@#!@fbl1*kdk#x%#
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["13.60.54.176", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["*"]
 
 
 
@@ -62,18 +62,15 @@ WSGI_APPLICATION = 'googleForms.wsgi.application'
 
 
 DATABASES = {
-    "default": {
-        "ENGINE": os.environ.get(
-            "DEFAULT_DB_ENGINE", default="django.db.backends.postgresql"
-        ),
-        "HOST": os.environ.get("DEFAULT_DB_HOST", default="localhost"),
-        "USER": os.environ.get("DEFAULT_DB_USER", default="postgres"),
-        "PASSWORD": os.environ.get("DEFAULT_DB_PASSWORD", default="postgres123"),
-        "NAME": os.environ.get("DEFAULT_DB_NAME", default="gforms"),
-        "PORT": os.environ.get("DEFAULT_DB_PORT", default="5433"),
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'gformsdb',
+        'USER': 'gformsuser',
+        'PASSWORD': 'postgres123',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
-
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
